@@ -63,7 +63,7 @@ namespace AzFnBlobTrigger
             // Spilt the Current line by , this will return an array
             var column = curLine.Split(',');
 
-            SqlConnection connection = new SqlConnection("Server=tcp:wmjune2023.database.windows.net,1433;Initial Catalog=MyCompany;Persist Security Info=False;User ID=MaheshAdmin;Password= P@ssw0rd_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlConnection connection = new SqlConnection("[YOUR-CONNECTIOn-STRING-HERE]");
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "Insert into PeopleInfo (Name, City) Values (@Name,@City)";
