@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9AED450-2E50-495A-A258-438A797A4CF8}"
 	ProjectSection(SolutionItems) = preProject
 		assignment.md = assignment.md
+		readme.md = readme.md
 		..\USe.txt = ..\USe.txt
 	EndProjectSection
 EndProject
