@@ -33,3 +33,11 @@ Function Hosting Plane
   "schedule": "0 */5 * * * *"  --< For every 5 mins
 		- seconds mins hours day month year
 	"0/1 * * * * * " for everey second	
+
+
+- Adding PAckage in the Project
+	- dotnet add package [PACKAGE-NAME] -v [VERSION]
+		- e.g. dotnet add package Microsoft.EntityFrameworkCore -v 6.0.13
+
+- Database First Approach
+dotnet ef dbcontext scaffold "YOUR-=CONNECTION-STRING" Microsoft.EntityFrameworkCore.SqlServer -o Models
