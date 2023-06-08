@@ -30,5 +30,8 @@ Create Table Products(
 					- Laptops from All Manufactureres 	
 	
 
+3. Modify the HTTP API created for Products with following requirements
+	- Make sure that the application creates queues for each manufacturer so that the product data for the specific manufacturere will be wreitten into that queue
+	- Create Azure functions for queue for each manufacturere that will read data from the it is monitoring and will write data in seperate tables in SQL Server that is for the manufacturer   
 
 

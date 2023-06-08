@@ -41,3 +41,13 @@ Function Hosting Plane
 
 - Database First Approach
 dotnet ef dbcontext scaffold "YOUR-=CONNECTION-STRING" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+
+- To Acces Storage, we must use the following packages
+	- Azure.Storage.{STORAGE-PACKAGE}
+	- e.g.
+		- Azure.Storage.Queues
+		- Azure.Storage.Blobs
+		- Azure.Storage.Tables
+
+

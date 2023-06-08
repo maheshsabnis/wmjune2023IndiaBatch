@@ -70,6 +70,12 @@ namespace AzFnHttpService
             var result = await ctx.Products.AddAsync(product);
             await ctx.SaveChangesAsync();
 
+            // 4. Write data in queue
+
+            Messaging messaging = new Messaging();
+
+            await messaging.WriteQueueAsync(result.Entity);
+
             return new OkObjectResult(result.Entity);
         }
         [FunctionName("Put")]
